@@ -73,8 +73,10 @@ def addStudent(first_name: str, last_name: str, email: str, enrollment_date: str
     with conn.cursor() as cur:
         cur.execute("INSERT INTO students (first_name, last_name, email, enrollment_date) VALUES (%s, %s, %s, %s);",
                     (first_name, last_name, email, enrollment_date))
+        cur.execute("SELECT * FROM students WHERE email = %s", (email,))
+        student_id, first_name, last_name, email, enrollment_date = cur.fetchone()
+        print(f"Added student to the database.\n++ Student ID: {student_id}\n++ Name: {first_name} {last_name}\n++ Email: {email}\n++ Enrollment date: '{enrollment_date}'\n")
         conn.commit()
-        print(f"Added student to the database.\n++ Name: {first_name} {last_name}\n++ Email: {email}\n++ Enrollment date: '{enrollment_date}'\n")
 
 def updateStudentEmail(student_id: int, email: str):
     '''
@@ -104,7 +106,7 @@ def deleteStudent(student_id: int):
             print(f"Invalid input. No student with ID '{student_id}' exists.\n")
             return
         student_id, first_name, last_name, email, enrollment_date = row
-        print(f"Deleted student from the database.\n-- Name: {first_name} {last_name}\n-- Email: {email}\n-- Enrollment date: '{enrollment_date}'\n")
+        print(f"Deleted student from the database.\n-- Student ID: {student_id}\n-- Name: {first_name} {last_name}\n-- Email: {email}\n-- Enrollment date: '{enrollment_date}'\n")
         cur.execute("DELETE FROM students WHERE student_id = %s", (student_id,))
         conn.commit()
 
