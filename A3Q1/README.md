@@ -31,7 +31,7 @@
 - password (pgAdmin password) - default: "TA"
 - host        (Database Host) - default: "localhost"
 - port        (Database Port) - default: "5432"
-5. If different from default, feel free to hardcode your defaults in `A3Q1.py`
+5. If different from default, feel free to hardcode new defaults in `A3Q1.py`
 
 ``` Instructions for Running the CRUD Application ```
 1. Navigate to the directory containing the `A3Q1.py` file
