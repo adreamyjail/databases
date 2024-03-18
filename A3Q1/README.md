@@ -56,3 +56,7 @@ Choose an option:
 7. Once satisfied, Exit the program by inputting `0` for `[0] Exit`
 
 ## Demonstration Video
+Below is a link to an unlisted YouTube video of ~ 5 min. demonstrating the functionality of the application.
+The video's intention is to quickly, but clearly, show the execution of each function and the corresponding
+effect it has on the database. 
+> https://youtu.be/BKpZrEDES1E
