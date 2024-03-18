@@ -9,9 +9,9 @@ conn = None
 def connectToDB():
     global conn
     if conn is None:
-        dbname = input("Enter the database name: ") or "a3p1"
-        password = input("Enter the database password: ") or "greetings"
-        user = input("Enter the database user: ") or "ta"
+        dbname = input("Enter the database name: ") or "A3Q1"
+        user = input("Enter the database user: ") or "Greetings"
+        password = input("Enter the database password: ") or "TA"
         host = input("Enter the database host: ") or "localhost"
         port = input("Enter the database port: ") or "5432"
             
