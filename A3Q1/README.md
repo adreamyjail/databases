@@ -10,27 +10,27 @@
 ## Installation instructions
 - Install Python 3.x.x (if not already installed) 
 - Run `pip install --upgrade pip` -- upgrades pip to at least 20.3
-- Run `pip install psycopg`       -- install latest ver of psycopg
+- Run `pip install psycopg`       -- install latest version of psycopg
 
 ## Usage instructions
 ``` Instructions for Running the Database SQL Scripts ```
 1. Open `pgAdmin` or alternative methods to connect to a PostgreSQL database.
 2. Run the `DDL.sql` script followed by `DML.sql` script. 
-In pgAdmin:
--- Select `Query Tool`
--- Press `Alt + O` or `Open File` to open `DDL.sql`
--- Press `F5` or `Execute/Refresh` to run `DDL.sql`
--- Press `Alt + O` or `Open File` to open `DML.sql`
--- Press `F5` or `Execute/Refresh` to run `DML.sql`
+> In pgAdmin:
+- Select `Query Tool`
+- Press `Alt + O` or `Open File` to open `DDL.sql`
+- Press `F5` or `Execute/Refresh` to run `DDL.sql`
+- Press `Alt + O` or `Open File` to open `DML.sql`
+- Press `F5` or `Execute/Refresh` to run `DML.sql`
 3. Grant user privileges to the following in `pgAdmin`:
--- Under    `Tables`: students
--- Under `Sequences`: students_student_id_seq
+- Under    `Tables`: students
+- Under `Sequences`: students_student_id_seq
 4. Note the following information for `A3Q1.py`:
--- dbname      (Database Name) - default: "A3Q1"
--- user     (pgAdmin username) - default: "Greetings"
--- password (pgAdmin password) - default: "TA"
--- host        (Database Host) - default: "localhost"
--- port        (Database Port) - default: "5432"
+- dbname      (Database Name) - default: "A3Q1"
+- user     (pgAdmin username) - default: "Greetings"
+- password (pgAdmin password) - default: "TA"
+- host        (Database Host) - default: "localhost"
+- port        (Database Port) - default: "5432"
 5. If different from default, feel free to hardcode new defaults in `A3Q1.py`
 
 ``` Instructions for Running the CRUD Application ```
@@ -53,4 +53,6 @@ Choose an option:
 ```
 5. Enter the number corresponding to your desired option.
 6. You will be prompted with more user input prompts or text output.
-7. Once satisfied, Exit the program by choosing `[0] Exit`
+7. Once satisfied, Exit the program by inputting `0` for `[0] Exit`
+
+## Demonstration Video
