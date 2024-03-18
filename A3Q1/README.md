@@ -8,7 +8,7 @@
 - `DML.sql`: DML SQL script - inserting initial data from A3Q1 specification page
 
 ## Installation instructions
-- Install Python 3.10.x (ideally, 3.12.2) 
+- Install Python 3.10.x or newer
 - Run `pip install --upgrade pip` -- upgrades pip to at least 20.3
 - Run `pip install psycopg`       -- install latest version of psycopg
 
@@ -31,12 +31,12 @@
 - password (pgAdmin password) - default: "TA"
 - host        (Database Host) - default: "localhost"
 - port        (Database Port) - default: "5432"
-5. If different from default, feel free to hardcode new defaults in `A3Q1.py`
+5. If different from default, feel free to hardcode your defaults in `A3Q1.py`
 
 ``` Instructions for Running the CRUD Application ```
 1. Navigate to the directory containing the `A3Q1.py` file
 2. Run the file via `python A3Q1.py` or `python3 A3Q1.py` (whichever's appropriate)
-3. User inputs will prompt you to enter database credentials. Press `Enter` for default.
+3. The program will prompt you to enter database credentials. Press `Enter` for default.
 4. With defaults and a successful connection, you will be greeted with the following:
 ```
 Attempting to connect to PostgreSQL database...
